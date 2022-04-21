@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoFit-Running</title>
+
+    <!-- leaflet css  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@v0.76.0/dist/L.Control.Locate.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@v0.76.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.4/dist/L.Control.Locate.min.css" />
+
+    <style>
+        p{
+          font-size: 1.5em;
+         margin-top: 2em;
+        }
+
+        #map {
+          height: 350px;
+          width: 800px;
+          bottom: -50px;
+          left: 300px;
+          border-radius: 2px;
+          border: 2px solid black;
+
+        }
+
+        button{
+          font-size: 1.5em;
+          bottom: 90;
+          margin-top: 5em;
+          margin-left: 28em;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+  <h1 style="text-align:center;""> GeoFit-Running </h1>
+<p style="text-align:center; Bottom: 0;"> Distance: <br> Time: <br> Pace: </p>
+
+    <div id="map"></div>
+
+
+
+</body>
+
+
+</html>
+
+<!-- leaflet js  -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
+
+<script>
+    // Map initialization
+    var map = L.map('map').setView([51.00447, -114.1240], 8);
+
+    //osm layer
+    var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+    osm.addTo(map);
+
+    L.control.locate().addTo(map);
+
+</script>
+
+<body>
+
+<button type="button" class="btn btn-danger">Stop Run</button>
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
