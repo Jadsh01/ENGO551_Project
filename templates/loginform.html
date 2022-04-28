@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Login Form with Username and Password
+{% endblock %}
+
+{% block body %}
+        <h1>Login</h1>
+
+        <form action="{{ url_for('login') }}" method="post">
+
+            <div class="form-group">
+                <input class="form-control" name="username" placeholder="Username">
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" name="password" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary">Login</button>
+            </div>
+        </form>
+
+        <p>
+            Don't have an account? Create One Today! Please <a href="{{ url_for('index')}}">sign up</a>.
+            
+        </p>
+{% endblock %}
