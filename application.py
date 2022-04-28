@@ -56,7 +56,7 @@ def login():
 
     session["userid"]=user["userid"]
     session["logged_in"]=True
-
+#Return to index page (GeoFit Running Web)
     return render_template("index.html")
     
 # Logout session
