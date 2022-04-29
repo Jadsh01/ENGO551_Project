@@ -1,0 +1,70 @@
+
+
+body,html{
+    margin:auto; padding:auto;
+    background-color: #0f0e12;
+    background-image: url("bckground_img/bck_images1.jpg"); 
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+hr {
+    color: white;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+#status {
+    color: rgb(160, 0, 0);
+}
+
+
+
+#main-header {
+    margin: 0; 
+    font-family: 'times new roman';
+    font-weight: normal; 
+    text-align: center;
+    padding-top: 10px; 
+    padding-bottom: 1px; 
+    width: 100%; color: white; 
+    border-radius: 8px;
+    background-color: rgba(51, 9, 102, 0.5); 
+ 
+    background-blend-mode: multiply; 
+    background-size: cover;
+   
+}
+
+#form-bkg {
+    background-color: #6941d7;
+    position: relative;
+    border-radius: 8px;
+    width: 30vw;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 7px;
+}
+
+#map{
+    position: relative;
+    width: 90vw; height: 90vh;
+    margin-left: auto; 
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+#form-input {
+    background-color: #FFFFFF;
+    border: 2px solid rgba(71, 14, 89, 0.4);
+    border-radius: 4px;
+    padding: 7px 15px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 7px; 
+    margin-top: 7px; 
+    margin-right: 22px; 
+    margin-left: 13px;
+    vertical-align: -2px;
+}

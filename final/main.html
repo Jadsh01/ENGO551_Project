@@ -4,6 +4,14 @@
    <title> Main </title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+<Link rel="StyleSheet" href="style.css">
+</script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+crossorigin=""></script>
 
 <style>
  div{
@@ -11,6 +19,7 @@
    height: 50px;
    left: 550px;
    margin: 100px;
+   text-align: center;
 }
 
 </style>
@@ -18,21 +27,29 @@
 
 
 <body>
-   <h1 style="color:;text-align:center;"> Welcome to <br> GeoFit-Running</h1>
+   
+ 
+   <header id="main-header">
+      <h1>Welcome to <br> GeoFit-Running!</h1>
+      
+    </header>
+   
 
-   <div class="alert alert-success" role="alert" >
-   <a href="run.html">Start Run!</a>
-    </div>
+   
 </body>
 
 
 
 <body>
 
-        <div class="alert alert-success" role="alert" >
-        <a href="track.html">Past Runs</a>
-        </div>
-
+    
+        <script src="./script.js"></script>
+      
+        <form id="con">
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <a href="run.html" button type="button" class="btn btn-success btn-lg" >Start Run</button>
+        <a href="track.html" button type="button"  class="btn btn-danger btn-lg" >Past Run</button>
+        </form>
 </body>
 
 
