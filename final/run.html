@@ -47,14 +47,23 @@
 <body>
 
   <h1 style="text-align:center;""> GeoFit-Running </h1>
-<p style="text-align:center; Bottom: 0;"> Distance: <br> Time: <br> Pace: </p>
+  <p style="text-align:center; "> Distance: 0 km
+    <br> Time: <label id="hours">00</label>:<label id="minutes">00</label>:<label id="seconds">00</label> <br> Pace: 0 km/s </p>
+
+
+
+
 
     <div id="map"></div>
 
 
 
 </body>
+<div>
 
+
+
+  </div>
 
 </html>
 
@@ -77,8 +86,37 @@
 
 </script>
 
-<body>
+<script>
 
+  var minutesLabel = document.getElementById("minutes");
+  var secondsLabel = document.getElementById("seconds");
+  var totalSeconds = 0;
+  setInterval(setTime, 1000);
+
+  function setTime() {
+    ++totalSeconds;
+    secondsLabel.innerHTML = pad(totalSeconds % 60);
+    minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+  }
+
+  function pad(val) {
+    var valString = val + "";
+    if (valString.length < 2) {
+      return "0" + valString;
+    } else {
+      return valString;
+    }
+  }
+
+
+  </script>
+
+
+
+
+
+<body>
+<a style="text-align:center;"" href="main.html">Stop Run</a>
 <button type="button" class="btn btn-danger">Stop Run</button>
   </body>
 
